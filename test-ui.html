@@ -1,0 +1,1645 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171211" />
+  <meta name="description" content="ORI — Ambiente de testes do design system e das animações." />
+
+  <title>ORI — Componentes e animações</title>
+
+  <!-- Fontes já utilizadas pelo design system -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Lucide já utilizado pelo projeto -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- =========================================
+       TOPLINE
+  ========================================== -->
+
+  <div class="topline">
+    <span>ORI · Museu de memória, arte e futuros possíveis</span>
+
+    <span class="topline-right">
+      <i class="live-dot"></i>
+      Acervo em expansão · 2086
+    </span>
+  </div>
+
+
+  <!-- =========================================
+       NAVIGATION
+  ========================================== -->
+
+  <header class="nav">
+
+    <a class="brand" href="#inicio" aria-label="ORI início">
+      <span class="brand-mark">O</span>
+
+      <span>
+        <span class="brand-name">ORI</span>
+        <span class="brand-caption">Museu de futuros possíveis</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="#inicio">Início</a>
+      <a href="#exposicoes">Exposições</a>
+      <a href="#colecao">Coleção</a>
+      <a href="#manifesto">Manifesto</a>
+      <a href="#design-system">Design system</a>
+      <a href="#panels">Painéis</a>
+    </nav>
+
+    <div class="nav-actions">
+
+      <span class="nav-meta">PT / BR</span>
+
+      <a class="btn btn-outline btn-sm" href="#colecao">
+        Explorar acervo
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <i data-lucide="menu"></i>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main id="inicio">
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="hero">
+
+      <span class="hero-index">
+        INSTITUTO ORI · ARQUIVO 2086
+      </span>
+
+      <div class="hero-copy">
+
+        <div class="eyebrow mono reveal">
+          Cultura não é passado. É continuidade.
+        </div>
+
+        <h1 class="reveal delay-1">
+          O futuro<br>
+          tem <em>raízes.</em>
+        </h1>
+
+        <p class="hero-description reveal delay-2">
+          Um museu em movimento. Um território onde arte,
+          tecnologia e memória se encontram para imaginar
+          futuros que não precisam esquecer de onde vieram.
+        </p>
+
+        <div class="hero-actions reveal delay-3">
+
+          <a class="btn btn-primary" href="#exposicoes">
+            Entrar no acervo
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <a class="btn btn-outline" href="#manifesto">
+            Conheça o ORI
+            <i data-lucide="move-up-right"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-2">
+
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1400&q=85"
+            alt="Pinturas em uma galeria de arte" />
+        </div>
+
+        <div class="hero-outline"></div>
+
+        <div class="hero-stamp">
+
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <path id="stampPath" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0" />
+            </defs>
+
+            <text fill="#f0dfc8" font-size="8" letter-spacing="2">
+              <textPath href="#stampPath">
+                MEMÓRIA · MATÉRIA · MOVIMENTO ·
+              </textPath>
+            </text>
+          </svg>
+
+          <strong>ORI<br>2086</strong>
+
+        </div>
+
+        <div class="hero-caption">
+          <div>
+            <strong>O que fomos ainda pulsa.</strong>
+            <small>COLEÇÃO PERMANENTE · NÚCLEO 01</small>
+          </div>
+
+          <small>01 / 04</small>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         MARQUEE
+    ========================================== -->
+
+    <div class="marquee" aria-hidden="true">
+
+      <div class="marquee-track">
+        <span>Memória é tecnologia</span>
+        <b>✳</b>
+        <span>O amanhã também é nosso</span>
+        <b>✳</b>
+        <span>Arte como possibilidade</span>
+        <b>✳</b>
+        <span>Memória é tecnologia</span>
+        <b>✳</b>
+        <span>O amanhã também é nosso</span>
+        <b>✳</b>
+        <span>Arte como possibilidade</span>
+        <b>✳</b>
+      </div>
+
+    </div>
+
+
+    <!-- =========================================
+         EXHIBITIONS
+    ========================================== -->
+
+    <section class="section" id="exposicoes">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow mono">
+              01 — Exposições em cartaz
+            </div>
+
+            <h2 class="section-title">
+              Outras formas<br>
+              de <em>ver o mundo.</em>
+            </h2>
+          </div>
+
+          <p class="section-note">
+            Percursos curatoriais que atravessam territórios,
+            linguagens e temporalidades. Cada exposição é
+            uma porta, não um ponto final.
+          </p>
+
+        </div>
+
+        <div class="exhibition-grid">
+
+          <a class="exhibit-card reveal" href="#manifesto">
+
+            <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1200&q=85"
+              alt="Pintura abstrata colorida em exposição" />
+
+            <div class="card-topline">
+              <span class="tag">
+                <i class="tag-dot"></i>
+                Em cartaz
+              </span>
+
+              <span class="round-link">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="exhibit-content">
+
+              <div class="card-index">
+                EXPOSIÇÃO 001 · MEMÓRIA
+              </div>
+
+              <h3>
+                O que o tempo<br>
+                não levou
+              </h3>
+
+              <p>
+                Matéria, gesto e conhecimento: os rastros
+                que atravessam gerações e continuam criando mundo.
+              </p>
+
+            </div>
+          </a>
+
+
+          <a class="exhibit-card reveal delay-1" href="#manifesto">
+
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1100&q=85"
+              alt="Instalação artística imersiva com luz e cor" />
+
+            <div class="card-topline">
+              <span class="tag">
+                EXPOSIÇÃO 014 · FUTURO
+              </span>
+
+              <span class="round-link">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="exhibit-content">
+
+              <div class="card-index">
+                NÚCLEO DE PESQUISA · 014
+              </div>
+
+              <h3>Corpos em transformação</h3>
+
+              <p>
+                Identidade, tecnologia e novas possibilidades
+                de existência.
+              </p>
+
+            </div>
+          </a>
+
+
+          <a class="exhibit-card reveal delay-2" href="#manifesto">
+
+            <img src="https://images.unsplash.com/photo-1531913764164-f85c52e6e654?auto=format&fit=crop&w=1100&q=85"
+              alt="Escultura contemporânea em ambiente de exposição" />
+
+            <div class="card-topline">
+              <span class="tag">
+                EXPOSIÇÃO 027 · MATÉRIA
+              </span>
+
+              <span class="round-link">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </div>
+
+            <div class="exhibit-content">
+
+              <div class="card-index">
+                INSTALAÇÃO IMERSIVA · 027
+              </div>
+
+              <h3>Ecologias do amanhã</h3>
+
+              <p>
+                Quando natureza, arquitetura e invenção
+                deixam de ser opostos.
+              </p>
+
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         COLLECTION
+    ========================================== -->
+
+    <section class="section" id="colecao" style="padding-top:10px">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow mono">
+              02 — Percorra o arquivo
+            </div>
+
+            <h2 class="section-title">
+              Peças de um<br>
+              <em>mundo maior.</em>
+            </h2>
+          </div>
+
+          <a class="text-link" href="#design-system">
+            Ver todas as coleções
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+        </div>
+
+
+        <div class="collection-grid" id="collectionGrid" aria-live="polite">
+
+          <article class="collection-card reveal">
+
+            <div class="collection-image">
+
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=85"
+                alt="Obra de arte em exposição" />
+
+              <span class="tag">Arte & memória</span>
+
+              <button class="favorite-toggle" type="button" aria-label="Favoritar coleção" aria-pressed="false">
+                <i data-lucide="heart"></i>
+              </button>
+
+            </div>
+
+            <div class="collection-body">
+
+              <div class="collection-meta">
+                <span>Arquivo permanente · 001—024</span>
+                <span>12 obras</span>
+              </div>
+
+              <h3>Memórias que permanecem</h3>
+
+              <p>
+                Obras, pigmentos e gestos que carregam
+                histórias através do tempo.
+              </p>
+
+              <div class="collection-footer">
+                <span class="status">Coleção permanente</span>
+
+                <a class="text-link" href="#manifesto">
+                  Explorar
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+
+          <article class="collection-card reveal delay-1">
+
+            <div class="collection-image">
+
+              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85"
+                alt="Instalação de arte contemporânea" />
+
+              <span class="tag">Espaço & tecnologia</span>
+
+              <button class="favorite-toggle" type="button" aria-label="Favoritar coleção" aria-pressed="false">
+                <i data-lucide="heart"></i>
+              </button>
+
+            </div>
+
+            <div class="collection-body">
+
+              <div class="collection-meta">
+                <span>Arquivo imersivo · 025—041</span>
+                <span>08 obras</span>
+              </div>
+
+              <h3>Arquiteturas sensíveis</h3>
+
+              <p>
+                Ambientes que aproximam corpo, espaço,
+                tecnologia e imaginação.
+              </p>
+
+              <div class="collection-footer">
+                <span class="status">Visita disponível</span>
+
+                <a class="text-link" href="#manifesto">
+                  Explorar
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+
+          <article class="collection-card reveal delay-2">
+
+            <div class="collection-image">
+
+              <img src="https://images.unsplash.com/photo-1531913764164-f85c52e6e654?auto=format&fit=crop&w=900&q=85"
+                alt="Escultura em exposição" />
+
+              <span class="tag">Futuros especulativos</span>
+
+              <button class="favorite-toggle" type="button" aria-label="Favoritar coleção" aria-pressed="false">
+                <i data-lucide="heart"></i>
+              </button>
+
+            </div>
+
+            <div class="collection-body">
+
+              <div class="collection-meta">
+                <span>Arquivo experimental · 042—059</span>
+                <span>06 obras</span>
+              </div>
+
+              <h3>Formas por vir</h3>
+
+              <p>
+                Experimentos visuais sobre futuros possíveis
+                e outras maneiras de existir.
+              </p>
+
+              <div class="collection-footer">
+                <span class="status">Nova exposição</span>
+
+                <a class="text-link" href="#manifesto">
+                  Explorar
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         FEATURE / MANIFESTO
+    ========================================== -->
+
+    <section class="feature" id="manifesto">
+
+      <div class="feature-visual">
+
+        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1200&q=85"
+          alt="Instalação artística com luz e formas" />
+
+        <div class="feature-ring"></div>
+
+      </div>
+
+      <div class="feature-copy reveal">
+
+        <div class="eyebrow mono">
+          03 — O manifesto ORI
+        </div>
+
+        <h2>
+          Não existe futuro sem <em>memória.</em>
+        </h2>
+
+        <p>
+          ORI nasce da ideia de que imaginar o amanhã também
+          é um ato de recuperar, preservar e transformar.
+          Não tratamos a ancestralidade como uma peça atrás
+          do vidro: ela é força ativa, linguagem, tecnologia
+          e movimento.
+        </p>
+
+        <p>
+          Somos um espaço para encontros improváveis entre
+          arte, pensamento, ciência e imaginação. Um museu
+          que não congela histórias — cria condições para
+          que elas continuem.
+        </p>
+
+        <a class="btn btn-secondary" href="#design-system">
+          Leia nosso manifesto
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         PRINCIPLES / MINI CARDS
+    ========================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow mono">
+              04 — O que nos move
+            </div>
+
+            <h2 class="section-title">
+              Um espaço feito<br>
+              de <em>conexões.</em>
+            </h2>
+          </div>
+
+          <p class="section-note">
+            Nossa identidade não é uma decoração aplicada
+            ao conteúdo. É a maneira como o espaço pensa,
+            acolhe e conta histórias.
+          </p>
+
+        </div>
+
+
+        <div class="collection-grid">
+
+          <article class="collection-card pattern-corner" style="padding:25px">
+
+            <div class="mini-card-icon">
+              <i data-lucide="orbit"></i>
+            </div>
+
+            <h3 style="font:500 26px var(--font-display);margin:19px 0 8px">
+              Memória viva
+            </h3>
+
+            <p style="color:var(--color-muted);font-size:11px;line-height:1.8;margin:0">
+              O passado não é distante. É uma camada presente
+              que informa escolhas, linguagens e possibilidades.
+            </p>
+
+            <div style="margin-top:20px">
+              <a class="text-link" href="#design-system">
+                Conheça o princípio
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+
+          </article>
+
+
+          <article class="collection-card pattern-corner" style="padding:25px">
+
+            <div class="mini-card-icon">
+              <i data-lucide="shapes"></i>
+            </div>
+
+            <h3 style="font:500 26px var(--font-display);margin:19px 0 8px">
+              Forma em movimento
+            </h3>
+
+            <p style="color:var(--color-muted);font-size:11px;line-height:1.8;margin:0">
+              Geometrias, materiais e espaços que sugerem
+              transformação, sem reduzir cultura a ornamento.
+            </p>
+
+            <div style="margin-top:20px">
+              <a class="text-link" href="#design-system">
+                Conheça o princípio
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+
+          </article>
+
+
+          <article class="collection-card pattern-corner" style="padding:25px">
+
+            <div class="mini-card-icon">
+              <i data-lucide="telescope"></i>
+            </div>
+
+            <h3 style="font:500 26px var(--font-display);margin:19px 0 8px">
+              Futuros plurais
+            </h3>
+
+            <p style="color:var(--color-muted);font-size:11px;line-height:1.8;margin:0">
+              Imaginar futuros é abrir espaço para outras
+              perspectivas, tecnologias e modos de existir.
+            </p>
+
+            <div style="margin-top:20px">
+              <a class="text-link" href="#design-system">
+                Conheça o princípio
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         DESIGN SYSTEM SHOWCASE
+    ========================================== -->
+
+    <section class="showcase" id="design-system">
+
+      <div class="container">
+
+        <div class="showcase-head reveal">
+
+          <div>
+            <div class="eyebrow mono">
+              05 — Linguagem visual
+            </div>
+
+            <h2 class="section-title">
+              O sistema por<br>
+              <em>trás da experiência.</em>
+            </h2>
+          </div>
+
+          <p>
+            Uma amostra de componentes e fundamentos.
+            A interface usa superfícies quentes e escuras;
+            o ocre e o barro funcionam como acentos,
+            não como preenchimento de tudo.
+          </p>
+
+        </div>
+
+
+        <div class="showcase-grid">
+
+          <!-- BOTÕES E LINKS -->
+
+          <section class="showcase-panel reveal">
+
+            <div class="panel-heading">
+              <h3>Botões & links</h3>
+              <span>COMPONENTS / ACTIONS</span>
+            </div>
+
+            <p class="component-label">
+              Botões principais
+            </p>
+
+            <div class="button-set">
+
+              <button class="btn btn-primary">
+                Ação principal
+                <i data-lucide="arrow-up-right"></i>
+              </button>
+
+              <button class="btn btn-secondary">
+                Ação alternativa
+                <i data-lucide="plus"></i>
+              </button>
+
+              <button class="btn btn-outline">
+                Contorno
+                <i data-lucide="arrow-right"></i>
+              </button>
+
+              <button class="btn btn-quiet">
+                Discreto
+                <i data-lucide="bookmark"></i>
+              </button>
+
+            </div>
+
+            <div class="component-divider"></div>
+
+            <p class="component-label">
+              Tamanhos & ícones
+            </p>
+
+            <div class="button-set">
+
+              <button class="btn btn-primary btn-sm">
+                Compacto
+                <i data-lucide="arrow-up-right"></i>
+              </button>
+
+              <button class="btn btn-outline btn-sm">
+                Secundário
+              </button>
+
+              <button class="btn btn-icon" aria-label="Favoritar">
+                <i data-lucide="heart"></i>
+              </button>
+
+              <button class="btn btn-icon" aria-label="Compartilhar">
+                <i data-lucide="share-2"></i>
+              </button>
+
+            </div>
+
+            <div class="component-divider"></div>
+
+            <p class="component-label">
+              Links estilizados
+            </p>
+
+            <div class="link-set">
+
+              <a class="text-link" href="#colecao">
+                Link com seta
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+
+              <a class="text-link" href="#manifesto">
+                Saiba mais
+                <i data-lucide="move-right"></i>
+              </a>
+
+            </div>
+
+          </section>
+
+
+          <!-- BADGES, INPUTS E MINI CARDS -->
+
+          <section class="showcase-panel reveal delay-1">
+
+            <div class="panel-heading">
+              <h3>Tags & estados</h3>
+              <span>COMPONENTS / LABELS</span>
+            </div>
+
+            <p class="component-label">
+              Badges e categorias
+            </p>
+
+            <div class="badge-set">
+
+              <span class="badge ochre">
+                <i class="badge-dot"></i>
+                Em cartaz
+              </span>
+
+              <span class="badge clay">
+                <i class="badge-dot"></i>
+                Nova coleção
+              </span>
+
+              <span class="badge plum">
+                Arquivo histórico
+              </span>
+
+              <span class="badge">
+                Acesso livre
+              </span>
+
+            </div>
+
+            <div class="component-divider"></div>
+
+            <p class="component-label">
+              Campo de busca
+            </p>
+
+            <div class="input-wrap">
+
+              <input class="input" id="collectionSearch" type="search" placeholder="Buscar no acervo..."
+                aria-label="Buscar no acervo" />
+
+              <button class="btn btn-primary btn-icon" id="searchButton" type="button" aria-label="Buscar">
+                <i data-lucide="search"></i>
+              </button>
+
+            </div>
+
+            <p class="search-status" id="searchStatus" aria-live="polite">
+              Campo de demonstração.
+            </p>
+
+            <div class="component-divider"></div>
+
+            <p class="component-label">
+              Cartões compactos
+            </p>
+
+            <div class="mini-card-grid">
+
+              <div class="mini-card">
+
+                <span class="mini-card-icon">
+                  <i data-lucide="image"></i>
+                </span>
+
+                <span>
+                  <strong>Acervo visual</strong>
+                  <small>Obras, imagens e registros</small>
+                </span>
+
+              </div>
+
+              <div class="mini-card">
+
+                <span class="mini-card-icon">
+                  <i data-lucide="audio-lines"></i>
+                </span>
+
+                <span>
+                  <strong>Arquivo sonoro</strong>
+                  <small>Vozes, música e memória</small>
+                </span>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+          <!-- TOKENS E SUPERFÍCIES -->
+
+          <section class="showcase-panel reveal">
+
+            <div class="panel-heading">
+              <h3>Paleta de matéria</h3>
+              <span>TOKENS / COLOR</span>
+            </div>
+
+            <div class="token-list">
+
+              <div class="token">
+                <div class="token-swatch" style="background:#171211"></div>
+                <strong>Vazio</strong>
+                <small>#171211</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#2b211c"></div>
+                <strong>Madeira</strong>
+                <small>#2B211C</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#bd6547"></div>
+                <strong>Barro</strong>
+                <small>#BD6547</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#c69a5e"></div>
+                <strong>Ocre</strong>
+                <small>#C69A5E</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#69433f"></div>
+                <strong>Vinho</strong>
+                <small>#69433F</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#958473"></div>
+                <strong>Areia</strong>
+                <small>#958473</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#c4b29c"></div>
+                <strong>Linho</strong>
+                <small>#C4B29C</small>
+              </div>
+
+              <div class="token">
+                <div class="token-swatch" style="background:#e8dccb"></div>
+                <strong>Osso</strong>
+                <small>#E8DCCB</small>
+              </div>
+
+            </div>
+
+            <div class="component-divider"></div>
+
+            <p class="component-label">
+              Superfícies em camadas
+            </p>
+
+            <div class="stats-grid">
+
+              <div class="stat-card">
+                <strong>01</strong>
+                <span>Surface</span>
+              </div>
+
+              <div class="stat-card" style="background:#2b211c">
+                <strong>02</strong>
+                <span>Raised</span>
+              </div>
+
+              <div class="stat-card" style="background:#352720">
+                <strong>03</strong>
+                <span>Elevated</span>
+              </div>
+
+            </div>
+
+          </section>
+
+
+          <!-- TYPOGRAPHY E STATS -->
+
+          <section class="showcase-panel reveal delay-1">
+
+            <div class="panel-heading">
+              <h3>Tipografia & dados</h3>
+              <span>TYPOGRAPHY / TYPE</span>
+            </div>
+
+            <div class="type-specimen">
+
+              <div class="type-sample">
+                <span class="type-display">
+                  O futuro tem raízes.
+                </span>
+
+                <span class="type-role">
+                  DISPLAY / SERIF
+                </span>
+              </div>
+
+              <div class="type-sample">
+                <span class="type-body">
+                  Histórias que continuam criando mundo.
+                </span>
+
+                <span class="type-role">
+                  BODY / SANS
+                </span>
+              </div>
+
+              <div class="type-sample">
+                <span class="type-mono">
+                  ORI · ARQUIVO 2086
+                </span>
+
+                <span class="type-role">
+                  META / MONO
+                </span>
+              </div>
+
+            </div>
+
+            <div class="component-divider"></div>
+
+            <p class="component-label">
+              Indicadores de conteúdo
+            </p>
+
+            <div class="stats-grid">
+
+              <div class="stat-card">
+                <strong>126</strong>
+                <span>Obras</span>
+              </div>
+
+              <div class="stat-card">
+                <strong>08</strong>
+                <span>Exposições</span>
+              </div>
+
+              <div class="stat-card">
+                <strong>14</strong>
+                <span>Artistas</span>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         PANEL DEMO
+    ========================================== -->
+
+    <section class="panel-demo" id="panels">
+
+      <div class="container panel-demo-grid">
+
+        <div class="panel-demo-copy reveal">
+
+          <div class="eyebrow mono">
+            06 — Camadas de interface
+          </div>
+
+          <h2>
+            Informação que chega <em>de lado.</em>
+          </h2>
+
+          <p>
+            Panels são superfícies de apoio que aparecem
+            sem tirar a pessoa do contexto atual. No ORI,
+            um drawer lateral pode revelar detalhes de uma
+            obra, filtros do acervo, informações de uma
+            exposição ou ações secundárias.
+          </p>
+
+          <p>
+            O painel entra pela direita, deslizando para
+            a esquerda, enquanto o restante da interface
+            permanece visível sob uma camada de foco.
+          </p>
+
+          <div class="panel-demo-actions">
+
+            <button class="btn btn-primary" id="openDrawer">
+              <span>Ver painel de exposição</span>
+              <i data-lucide="panel-right-open"></i>
+            </button>
+
+            <button class="btn btn-outline" id="openDrawerAlt">
+              <span>Ver outro exemplo</span>
+              <i data-lucide="sliders-horizontal"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="panel-preview reveal delay-1">
+
+          <div class="panel-preview-head">
+            <strong>Anatomia de um panel</strong>
+            <span>UI / DRAWER 01</span>
+          </div>
+
+          <div class="panel-preview-row">
+
+            <span class="panel-preview-icon">
+              <i data-lucide="panel-right"></i>
+            </span>
+
+            <span>
+              <strong>Side drawer</strong>
+              <small>Camada lateral com entrada horizontal</small>
+            </span>
+
+          </div>
+
+          <div class="panel-preview-row">
+
+            <span class="panel-preview-icon">
+              <i data-lucide="scan-eye"></i>
+            </span>
+
+            <span>
+              <strong>Contextual</strong>
+              <small>Mantém a página de origem como referência</small>
+            </span>
+
+          </div>
+
+          <div class="panel-preview-row">
+
+            <span class="panel-preview-icon">
+              <i data-lucide="mouse-pointer-click"></i>
+            </span>
+
+            <span>
+              <strong>Acionável</strong>
+              <small>Fecha por botão, backdrop ou tecla Escape</small>
+            </span>
+
+          </div>
+
+          <div class="panel-preview-foot">
+            <span>Motion · 550ms</span>
+            <span>Right → Left</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================
+         CLOSING
+    ========================================== -->
+
+    <section class="closing">
+
+      <div class="eyebrow mono" style="justify-content:center">
+        O próximo capítulo começa aqui
+      </div>
+
+      <h2>
+        O futuro não está escrito.<br>
+        <em>Vamos imaginá-lo.</em>
+      </h2>
+
+      <p>
+        Entre no ORI e percorra um acervo que conecta
+        o que fomos ao que ainda podemos ser.
+      </p>
+
+      <a href="#exposicoes" class="btn btn-primary">
+        Explorar o museu
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer>
+
+    <span>© ORI · Museu de futuros possíveis</span>
+    <span>Memória é tecnologia.</span>
+    <span>Arquivo digital · 2086</span>
+
+  </footer>
+
+
+  <!-- =========================================
+       DRAWER
+  ========================================== -->
+
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+
+
+  <aside class="side-drawer" id="oriDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"
+    aria-hidden="true" tabindex="-1">
+
+    <div class="drawer-top">
+
+      <span class="drawer-kicker" id="drawerKicker">
+        Exposição · Em destaque
+      </span>
+
+      <button class="drawer-close" id="closeDrawer" aria-label="Fechar painel">
+        <i data-lucide="x"></i>
+      </button>
+
+    </div>
+
+
+    <div class="drawer-scroll">
+
+      <div class="drawer-art">
+
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1000&q=85"
+          alt="Detalhe de uma obra em exposição" />
+
+        <span class="drawer-art-label">
+          ORI / Registro visual 001
+        </span>
+
+      </div>
+
+      <div class="eyebrow mono" id="drawerEyebrow">
+        Arquivo · 2086
+      </div>
+
+      <h2 class="drawer-title" id="drawerTitle">
+        Memória <em>mineral.</em>
+      </h2>
+
+      <p class="drawer-description" id="drawerDescription">
+        Uma investigação sobre matéria, território e permanência.
+        Nesta exposição, artistas imaginam a memória como algo
+        que se deposita, transforma e atravessa gerações — como
+        os minerais que guardam em suas estruturas os sinais
+        de outros tempos.
+      </p>
+
+      <div class="drawer-tags" id="drawerTags">
+
+        <span class="badge ochre">
+          Exposição temporária
+        </span>
+
+        <span class="badge">
+          Arte & território
+        </span>
+
+        <span class="badge clay">
+          Visita livre
+        </span>
+
+      </div>
+
+
+      <h3 class="drawer-section-title">
+        Informações
+      </h3>
+
+      <div class="drawer-meta" id="drawerMeta">
+
+        <div class="drawer-meta-item">
+          <span>Período</span>
+          <strong>12.08 — 30.11.2086</strong>
+        </div>
+
+        <div class="drawer-meta-item">
+          <span>Local</span>
+          <strong>Galeria 02 · Ala Sul</strong>
+        </div>
+
+        <div class="drawer-meta-item">
+          <span>Obras</span>
+          <strong>18 trabalhos</strong>
+        </div>
+
+        <div class="drawer-meta-item">
+          <span>Curadoria</span>
+          <strong>Núcleo ORI</strong>
+        </div>
+
+      </div>
+
+
+      <blockquote class="drawer-note" id="drawerNote">
+        “A matéria também se lembra. Cada camada é uma forma de continuar.”
+      </blockquote>
+
+
+      <!-- Controles já estilizados pelo design system -->
+
+      <div class="drawer-filter-controls" id="drawerFilters" hidden>
+
+        <div class="drawer-filter-field">
+
+          <label for="drawerCategory">
+            Categoria
+          </label>
+
+          <select id="drawerCategory">
+            <option>Todas as categorias</option>
+            <option>Arte e memória</option>
+            <option>Espaço e tecnologia</option>
+            <option>Futuros especulativos</option>
+          </select>
+
+        </div>
+
+        <div class="drawer-filter-field">
+
+          <label for="drawerPeriod">
+            Período
+          </label>
+
+          <select id="drawerPeriod">
+            <option>Todos os períodos</option>
+            <option>Arquivo permanente</option>
+            <option>Arquivo experimental</option>
+          </select>
+
+        </div>
+
+        <div class="drawer-filter-actions">
+
+          <button class="btn btn-primary btn-sm" type="button">
+            Aplicar filtros
+          </button>
+
+          <button class="btn btn-outline btn-sm" type="button">
+            Limpar
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="drawer-bottom">
+
+      <small id="drawerFootnote">
+        ORI · Exposição 001
+      </small>
+
+      <a class="btn btn-primary btn-sm" href="#exposicoes" id="drawerAction">
+        Explorar exposição
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =========================================
+       IMPORTS E INICIALIZAÇÃO DAS ANIMAÇÕES
+  ========================================== -->
+
+  <script type="module">
+
+    // Importa o design system real do projeto.
+    import '/src/styles/styles.css'
+
+    // Importa as animações já implementadas.
+    import {
+      observeReveals,
+      animateDrawer
+    } from '/src/animations/index.ts'
+
+
+    // -----------------------------------------
+    // LUCIDE
+    // -----------------------------------------
+
+    window.lucide?.createIcons()
+
+    // -----------------------------------------
+    // FAVORITOS
+    // -----------------------------------------
+
+    document.querySelectorAll('.favorite-toggle').forEach((button) => {
+
+      button.addEventListener('click', () => {
+
+        const isFavorite = button.getAttribute('aria-pressed') === 'true'
+
+        button.setAttribute('aria-pressed', String(!isFavorite))
+
+        button.setAttribute(
+          'aria-label',
+          isFavorite ? 'Favoritar coleção' : 'Remover dos favoritos'
+        )
+
+      })
+
+    })
+
+    // -----------------------------------------
+    // REVEAL
+    // -----------------------------------------
+
+    const cleanupReveals = observeReveals({
+      distance: 22,
+      duration: 760,
+      threshold: 0.12
+    })
+
+
+    // -----------------------------------------
+    // DRAWER
+    // -----------------------------------------
+
+    const drawer = document.getElementById('oriDrawer')
+    const backdrop = document.getElementById('drawerBackdrop')
+
+    const openDrawerButton = document.getElementById('openDrawer')
+    const openDrawerAltButton = document.getElementById('openDrawerAlt')
+    const closeDrawerButton = document.getElementById('closeDrawer')
+
+    const drawerFilters = document.getElementById('drawerFilters')
+
+    let drawerOpen = false
+    let lastDrawerTrigger = null
+
+
+    function openPanel(mode, trigger) {
+
+      if (drawerOpen) return
+
+      drawerOpen = true
+      lastDrawerTrigger = trigger
+
+      drawerFilters.hidden = mode !== 'filters'
+
+      if (mode === 'filters') {
+
+        document.getElementById('drawerKicker').textContent =
+          'Acervo · Ferramentas de busca'
+
+        document.getElementById('drawerEyebrow').textContent =
+          'Exploração · Coleções'
+
+        document.getElementById('drawerTitle').innerHTML =
+          'Encontre outras <em>camadas.</em>'
+
+        document.getElementById('drawerDescription').textContent =
+          'Refine a exploração por área temática e escolha como organizar as coleções. Este painel demonstra os controles de filtro do acervo.'
+
+        document.getElementById('drawerNote').textContent =
+          'O painel mantém o contexto da coleção enquanto oferece controles mais específicos.'
+
+        document.getElementById('drawerFootnote').textContent =
+          'ORI · Filtros do acervo'
+
+        document.getElementById('drawerAction').firstChild.textContent =
+          'Ver resultados '
+
+        document.getElementById('drawerTags').innerHTML = `
+          <span class="badge ochre">Filtros do acervo</span>
+          <span class="badge">Todas as épocas</span>
+          <span class="badge clay">Todas as linguagens</span>
+        `
+
+        document.getElementById('drawerMeta').innerHTML = `
+          <div class="drawer-meta-item">
+            <span>Período</span>
+            <strong>Qualquer época</strong>
+          </div>
+          <div class="drawer-meta-item">
+            <span>Categoria</span>
+            <strong>Todas as áreas</strong>
+          </div>
+          <div class="drawer-meta-item">
+            <span>Formato</span>
+            <strong>Obras e registros</strong>
+          </div>
+          <div class="drawer-meta-item">
+            <span>Ordenação</span>
+            <strong>Mais recentes</strong>
+          </div>
+        `
+
+      } else {
+
+        document.getElementById('drawerKicker').textContent =
+          'Exposição · Em destaque'
+
+        document.getElementById('drawerEyebrow').textContent =
+          'Arquivo · 2086'
+
+        document.getElementById('drawerTitle').innerHTML =
+          'Memória <em>mineral.</em>'
+
+        document.getElementById('drawerDescription').textContent =
+          'Uma investigação sobre matéria, território e permanência. Nesta exposição, artistas imaginam a memória como algo que se deposita, transforma e atravessa gerações.'
+
+        document.getElementById('drawerNote').textContent =
+          '“A matéria também se lembra. Cada camada é uma forma de continuar.”'
+
+        document.getElementById('drawerFootnote').textContent =
+          'ORI · Exposição 001'
+
+        document.getElementById('drawerAction').firstChild.textContent =
+          'Explorar exposição '
+
+        document.getElementById('drawerTags').innerHTML = `
+          <span class="badge ochre">Exposição temporária</span>
+          <span class="badge">Arte & território</span>
+          <span class="badge clay">Visita livre</span>
+        `
+
+        document.getElementById('drawerMeta').innerHTML = `
+          <div class="drawer-meta-item">
+            <span>Período</span>
+            <strong>12.08 — 30.11.2086</strong>
+          </div>
+          <div class="drawer-meta-item">
+            <span>Local</span>
+            <strong>Galeria 02 · Ala Sul</strong>
+          </div>
+          <div class="drawer-meta-item">
+            <span>Obras</span>
+            <strong>18 trabalhos</strong>
+          </div>
+          <div class="drawer-meta-item">
+            <span>Curadoria</span>
+            <strong>Núcleo ORI</strong>
+          </div>
+        `
+
+      }
+
+      document.body.classList.add('drawer-open')
+
+      animateDrawer({
+        drawer,
+        backdrop,
+        open: true,
+        duration: 550
+      })
+
+      closeDrawerButton.focus()
+
+      window.lucide?.createIcons()
+    }
+
+
+    function closePanel() {
+
+      if (!drawerOpen) return
+
+      drawerOpen = false
+
+      document.body.classList.remove('drawer-open')
+
+      animateDrawer({
+        drawer,
+        backdrop,
+        open: false,
+        duration: 550,
+
+        onComplete: () => {
+          lastDrawerTrigger?.focus()
+        }
+      })
+
+    }
+
+
+    openDrawerButton.addEventListener('click', () => {
+      openPanel('exhibition', openDrawerButton)
+    })
+
+    openDrawerAltButton.addEventListener('click', () => {
+      openPanel('filters', openDrawerAltButton)
+    })
+
+    closeDrawerButton.addEventListener('click', closePanel)
+
+    backdrop.addEventListener('click', closePanel)
+
+
+    // -----------------------------------------
+    // TECLADO
+    // -----------------------------------------
+
+    document.addEventListener('keydown', (event) => {
+
+      if (event.key === 'Escape' && drawerOpen) {
+        closePanel()
+      }
+
+    })
+
+
+    // -----------------------------------------
+    // MOBILE NAVIGATION
+    // -----------------------------------------
+
+    const menuButton = document.getElementById('menuButton')
+    const navLinks = document.getElementById('navLinks')
+
+    menuButton.addEventListener('click', () => {
+
+      const isOpen = navLinks.classList.toggle('open')
+
+      menuButton.setAttribute(
+        'aria-expanded',
+        String(isOpen)
+      )
+
+      menuButton.setAttribute(
+        'aria-label',
+        isOpen ? 'Fechar menu' : 'Abrir menu'
+      )
+
+      menuButton.innerHTML = isOpen
+        ? '<i data-lucide="x"></i>'
+        : '<i data-lucide="menu"></i>'
+
+      window.lucide?.createIcons()
+
+    })
+
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+
+      link.addEventListener('click', () => {
+
+        navLinks.classList.remove('open')
+
+        menuButton.setAttribute('aria-expanded', 'false')
+        menuButton.setAttribute('aria-label', 'Abrir menu')
+
+        menuButton.innerHTML = '<i data-lucide="menu"></i>'
+
+        window.lucide?.createIcons()
+
+      })
+
+    })
+
+
+    // -----------------------------------------
+    // LIMPEZA
+    // -----------------------------------------
+
+    window.addEventListener('pagehide', () => {
+      cleanupReveals()
+    })
+
+  </script>
+
+</body>
+
+</html>
