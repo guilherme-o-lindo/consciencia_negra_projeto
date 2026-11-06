@@ -7,17 +7,31 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "type-check": "vue-tsc -b"
+    "type-check": "vue-tsc -b",
+    "release": "semantic-release",
+    "prepare": "husky"
   },
   "dependencies": {
     "@lucide/vue": "^1.68.0",
+    "animejs": "^3.2.2",
     "three": "^0.187.0",
     "vue": "^3.5.44",
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^11.0.1",
+    "@semantic-release/github": "^12.0.10",
+    "@semantic-release/release-notes-generator": "^14.1.1",
     "@tailwindcss/vite": "^4.3.4",
+    "@types/animejs": "3.1.13",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-vue": "^6.0.10",
+    "husky": "^9.1.7",
+    "semantic-release": "^25.0.9",
     "tailwindcss": "^4.3.4",
     "typescript": "~5.9.3",
     "vite": "^8.3.5",

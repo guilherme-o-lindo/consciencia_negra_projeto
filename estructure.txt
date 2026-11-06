@@ -1,0 +1,72 @@
+﻿|-- public
+|   |-- assets
+|   |   |-- artworks
+|   |   |-- audio
+|   |   |-- environments
+|   |   |-- models
+|   |   |-- textures
+|-- src
+|   |-- animations
+|   |   |-- drawer.ts
+|   |   |-- index.ts
+|   |   |-- reveal.ts
+|   |-- app
+|   |   |-- providers
+|   |   |-- App.vue
+|   |-- components
+|   |   |-- common
+|   |   |-- layout
+|   |   |   |-- MuseumLayout.vue
+|   |   |-- ui
+|   |-- composables
+|   |   |-- useMuseumState.ts
+|   |-- data
+|   |   |-- exhibitions
+|   |   |   |-- index.json
+|   |   |-- rooms
+|   |   |   |-- index.json
+|   |   |-- settings
+|   |   |   |-- defaults.json
+|   |-- features
+|   |   |-- exhibitions
+|   |   |   |-- ExhibitionPanel.vue
+|   |   |-- interaction
+|   |   |-- map
+|   |   |-- navigation
+|   |   |   |-- NavigationHUD.vue
+|   |   |-- settings
+|   |   |   |-- settings.schema.ts
+|   |-- schemas
+|   |   |-- artwork.schema.ts
+|   |-- styles
+|   |   |-- design-system
+|   |   |   |-- components.css
+|   |   |   |-- tokens.css
+|   |   |   |-- typography.css
+|   |   |   |-- utilities.css
+|   |   |-- styles.css
+|   |-- three
+|   |   |-- core
+|   |   |   |-- createMuseum.ts
+|   |   |   |-- types.ts
+|   |   |-- interactions
+|   |   |-- objects
+|   |   |-- player
+|   |   |-- systems
+|   |   |-- world
+|   |   |-- MuseumCanvas.vue
+|   |-- types
+|   |   |-- index.ts
+|   |-- utils
+|   |   |-- index.ts
+|   |-- main.ts
+|-- .gitignore
+|-- env.d.ts
+|-- index.html
+|-- package.json
+|-- pnpm-lock.yaml
+|-- README.md
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- vite.config.ts
