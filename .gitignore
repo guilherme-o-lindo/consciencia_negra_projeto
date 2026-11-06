@@ -52,3 +52,6 @@ vite.config.ts.timestamp-*
 
 # Debug
 *.stackdump
+
+# Local secrets
+*.secret
