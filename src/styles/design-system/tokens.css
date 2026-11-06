@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+  /* tokens: matéria e cor */
+  --color-void: #171211;
+  --color-surface: #211a17;
+  --color-raised: #2b211c;
+  --color-raised-2: #352720;
+  --color-line: rgba(225, 202, 171, .15);
+  --color-line-strong: rgba(210, 157, 103, .42);
+  --color-text: #e8dccb;
+  --color-text-soft: #c4b29c;
+  --color-muted: #958473;
+  --color-dim: #716256;
+  --color-clay: #bd6547;
+  --color-clay-bright: #d17b58;
+  --color-copper: #a95e42;
+  --color-ochre: #c69a5e;
+  --color-ochre-light: #e0bd83;
+  --color-plum: #69433f;
+  --color-paper: #d8c8af;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-ui: 'Manrope', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --radius-sm: 4px;
+  --radius-md: 9px;
+  --radius-lg: 16px;
+  --shadow-card: 0 18px 50px rgba(0, 0, 0, .24);
+  --ease: cubic-bezier(.2, .75, .25, 1);
+}
