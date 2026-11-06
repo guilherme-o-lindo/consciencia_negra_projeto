@@ -4,21 +4,59 @@
 
 ## Tecnologias
 
-<div align="center">
+### Core
 
-### Frontend
+<table>
+  <tr>
+    <td align="center" width="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="40" height="40" alt="Vue.js"><br>
+      <b>Vue 3</b>
+    </td>
+    <td align="center" width="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" width="40" height="40" alt="Three.js"><br>
+      <b>Three.js</b>
+    </td>
+    <td align="center" width="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript"><br>
+      <b>TypeScript</b>
+    </td>
+  </tr>
+</table>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="45" alt="Vue.js" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="45" alt="TypeScript" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" height="45" alt="Three.js" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" height="45" alt="Vite" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" height="45" alt="Tailwind CSS" />
+### Interface e estilização
+
+<table>
+  <tr>
+    <td align="center" width="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="Tailwind CSS"><br>
+      <b>Tailwind CSS</b>
+    </td>
+    <td align="center" width="120">
+      <b>shadcn-vue</b>
+    </td>
+    <td align="center" width="120">
+      <b>Lucide Vue</b>
+    </td>
+  </tr>
+</table>
 
 ### Ferramentas
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pnpm/pnpm-original.svg" height="40" alt="pnpm" />
-
-</div>
+<table>
+  <tr>
+    <td align="center" width="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" width="40" height="40" alt="Vite"><br>
+      <b>Vite</b>
+    </td>
+    <td align="center" width="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pnpm/pnpm-original.svg" width="40" height="40" alt="pnpm"><br>
+      <b>pnpm</b>
+    </td>
+    <td align="center" width="120">
+      <b>Zod</b>
+    </td>
+  </tr>
+</table>
 
 | Tecnologia | Finalidade |
 |---|---|
